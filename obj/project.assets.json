@@ -103,109 +103,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       }
-    },
-    "net8.0/win-x64": {
-      "ClosedXML/0.105.0": {
-        "type": "package",
-        "dependencies": {
-          "ClosedXML.Parser": "2.0.0",
-          "DocumentFormat.OpenXml": "[3.1.1, 4.0.0)",
-          "ExcelNumberFormat": "1.1.0",
-          "RBush.Signed": "4.0.0",
-          "SixLabors.Fonts": "1.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/ClosedXML.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/ClosedXML.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "ClosedXML.Parser/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/ClosedXML.Parser.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/ClosedXML.Parser.dll": {}
-        }
-      },
-      "CsvHelper/33.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/CsvHelper.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/CsvHelper.dll": {}
-        }
-      },
-      "DocumentFormat.OpenXml/3.1.1": {
-        "type": "package",
-        "dependencies": {
-          "DocumentFormat.OpenXml.Framework": "3.1.1"
-        },
-        "compile": {
-          "lib/net8.0/DocumentFormat.OpenXml.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.dll": {}
-        }
-      },
-      "DocumentFormat.OpenXml.Framework/3.1.1": {
-        "type": "package",
-        "dependencies": {
-          "System.IO.Packaging": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/DocumentFormat.OpenXml.Framework.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.Framework.dll": {}
-        }
-      },
-      "ExcelNumberFormat/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/ExcelNumberFormat.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/ExcelNumberFormat.dll": {}
-        }
-      },
-      "RBush.Signed/4.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/RBush.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/RBush.dll": {}
-        }
-      },
-      "SixLabors.Fonts/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {}
-        }
-      },
-      "System.IO.Packaging/8.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.IO.Packaging.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.IO.Packaging.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -433,31 +330,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[8.0.16, 8.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.16, 8.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[8.0.16, 8.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
       }
     }
   }
