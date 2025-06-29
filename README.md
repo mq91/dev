@@ -1,15 +1,46 @@
-# What is this?
+# Attendance Permission Analyzer CLI
 
-The github.dev web-based editor is a lightweight editing experience that runs entirely in your browser. You can navigate files and source code repositories from GitHub, and make and commit code changes.
+A simple yet powerful command-line tool to analyze late arrivals and early exits based on attendance CSV files.
 
-There are two ways to go directly to a VS Code environment in your browser and start coding:
+Created by **Eng. Mohammed Alqarni**
 
-* Press the . key on any repository or pull request.
-* Swap `.com` with `.dev` in the URL. For example, this repo https://github.com/github/dev becomes http://github.dev/github/dev
+---
 
-Preview the gif below to get a quick demo of github.dev in action.
+## 🔍 What It Does
 
-![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
+This CLI tool reads an Arabic-encoded attendance CSV file (Windows-1256), detects permission periods (arriving after 9:00 AM or leaving before completing 8 hours), and allows you to:
 
-# Why?
-It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
+- Filter data by date range
+- Preview permission periods in the terminal
+- Export results as a professional Excel report
+
+---
+
+## ✅ Features
+
+- Supports Arabic column headers
+- Automatically calculates permission time in minutes
+- Interactive CLI with user prompts
+- Exports to `استئذانات.xlsx` in Arabic
+- No admin privileges required to run (when built as `.exe`)
+
+---
+
+## 📁 CSV Format Requirements
+
+Make sure your CSV includes the following Arabic headers:
+
+- `تاريخ الحركة ميلادي` (Date)
+- `وقت الدخول الفعلي` (Actual Entry Time) — format: `yyyy/MM/dd HH:mm:ss`
+- `وقت الخروج الفعلي` (Actual Exit Time) — format: `yyyy/MM/dd HH:mm:ss`
+
+Encoding should be **Windows-1256 (cp1256)**.
+
+---
+
+## 🚀 How to Run
+
+### From Source:
+
+```bash
+dotnet run
